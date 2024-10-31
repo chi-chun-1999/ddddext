@@ -1,5 +1,5 @@
 {
-    "homepage": "https://tixcraft.com/ticket/area/24_realive/17714",
+    "homepage": "about:blank",
     "refresh_datetime": "",
     "memo": "",
     "ocr_captcha": {
@@ -9,9 +9,9 @@
         "captcha": [
             {
                 "enable": true,
-                "url": "https://tixcraft.com/ticket/ticket/*",
-                "captcha": "#TicketForm_verifyCode-image",
-                "input": "#TicketForm_verifyCode",
+                "url": "",
+                "captcha": "",
+                "input": "",
                 "maxlength": "4"
             }
         ]
@@ -24,9 +24,9 @@
         "play_sound_filename": "sound_ding-dong.wav",
         "headless": false,
         "verbose": false,
-        "remote_url": "\"http://localhost:16888/\"",
+        "remote_url": "\"http://127.0.0.1:16888/\"",
         "proxy_server_port": "",
-        "window_size": "980,1024"
+        "window_size": "480,1024"
     },
     "autofill": [
         {
@@ -47,8 +47,8 @@
     "injectjs": [
         {
             "enable": true,
-            "url": "https://tixcraft.com/ticket/ticket/*",
-            "script": "var ticket_num =4;\n\nvar ticket_form_str = \"TicketForm_ticketPrice_0\";\n\nfor(var i=0;i<9;i++)\n{\n   var tmp = ticket_form_str+i;\n   if(document.getElementById(tmp))\n   {\n     document.getElementById(tmp).value=ticket_num;\n   }\n}",
+            "url": "",
+            "script": "",
             "run_at": "document_end",
             "world": "ISOLATED"
         }
@@ -56,18 +56,9 @@
     "cookie": [
         {
             "enable": true,
-            "domain": "tixcraft.com",
-            "key": "SID",
-            "value": "cQjOUFBGtYH5cEkWEn7y1v5JCRtq-fxHCWWaCPP7DSNRKT3VJV0VN7Ho_QtxkJ5ogUNqNg.",
-            "path": "/",
-            "http_only": true,
-            "secure": true
-        },
-        {
-            "enable": true,
             "domain": "",
-            "key": "SSID",
-            "value": "AJfyZco1NtuLYYDGA",
+            "key": "",
+            "value": "",
             "path": "/",
             "http_only": true,
             "secure": true
@@ -76,7 +67,7 @@
     "checkall": [
         {
             "enable": true,
-            "url": "https://tixcraft.com/ticket/ticket/*"
+            "url": ""
         }
     ]
 }

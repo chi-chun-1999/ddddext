@@ -61,11 +61,7 @@ function javascript_keypress(selector, text) {
 }
 
 function set_ocr_answer(answer) {
-    console.log("answer:"+answer);
-
-	$(ocr_config.input_selector).val(answer);
-	console.log("ocr_config.input_selector:"+$(ocr_config.input_selector).val());
-
+    //console.log("answer:"+answer);
     const current_inputed_value = $(ocr_config.input_selector).val();
     if (answer.length > 0) {
         if (current_inputed_value != answer) {
@@ -96,8 +92,7 @@ async function get_ocr_answer(api_url, image_data) {
     };
 
     const return_answer = await chrome.runtime.sendMessage(bundle);
-	// console.log('------------------\n\n');
-	// console.log(return_answer+'<---');
+    //console.log(return_answer);
 }
 
 function orc_image_ready(api_url) {
